@@ -1,3 +1,4 @@
+import { ThemeModeScript } from "flowbite-react";
 import "@/app/ui/global.css"
 import { inter } from '@/app/ui/fonts';
 
@@ -8,6 +9,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <ThemeModeScript />
+      </head>
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
